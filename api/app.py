@@ -6,7 +6,7 @@ from api.management_companyAPI import router as create_company_router, load_all_
 from models.predict import ModelPredictor
 from models.translator import AutoMultiLangTranslator
 
-BASE_DIR = os.path.dirname(__file__)
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 app = FastAPI(title="Dementia Forecast API")
 
